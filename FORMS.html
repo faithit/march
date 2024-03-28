@@ -8,6 +8,8 @@
 <body>
     <h3>Registration form</h3>
     <form>
+        <fieldset>
+            <legend>Personal information</legend>
         <label for="username">Username:</label>
         <input type="text" id="username" required>
         <br>
@@ -22,8 +24,13 @@
        <label for="male">Male</label>
        <input type="radio"id="female" value="female" name="gender">
         <label for="female">Female</label><br>
+        <label for="no">Phone number</label>
+        <input type="number" id="no">
+    </fieldset>
+        <fieldset>
+            <legend>Academic information</legend>
         <label for="course">Course:</label>
-        <select id="course">
+        <select id="course" multiple="multiple">
             <option value="fullstack">fullstack</option>
             <option value="Cyber security">Cyber security</option>
             <option value="ANDROID">ANDROID</option>
@@ -31,6 +38,12 @@
 
         </select>
         <br>
+        <br>
+        <label for="file">Attach documents:</label>
+        <input type="file" id="file">
+        <br>
+    </fieldset>
+    <br>
         <input type="submit" value="REGISTER">
     </form>
 </body>
