@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #one{
+        animation-name: changecolor;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes changecolor {
+        0%   {color: red;}
+        25%  {color: yellow;}
+        50%  {color: blue;}
+        100%  {color: green;}
+
+    }
+    #two{
+        animation:slidein 4s  infinite;
+
+    }
+    @keyframes slidein {
+        /* from { styles at the start of the animation } */
+         /* to { styles at the end of the animation } */
+      from{
+            color:red;
+            opacity: 0;
+            transform: translateX(-100);
+            } 
+        to{
+            color: aqua;
+            opacity: 1;
+            transform: translateX(0);
+        }
+        }
+        #hello{
+            animation:spin 2s linear 5;
+            width:120px;
+            height:120px;
+            background-color: aquamarine;
+            border: 2px solid green;
+            border-radius: 10px;
+            
+        }
+        @keyframes spin {
+            0% {transform:rotate(0deg) ;}
+            100% {transform:rotate(360deg)}
+            /* 0%{ transform: translateY(110vh);}
+            100%{ transform: translateY(0);} */
+            
+        }
+</style>
+<body>
+    <div id="hello">hello</div>
+    <h1 id="one">Animation</h1>
+    <p id="two">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus reprehenderit saepe, beatae minus optio voluptatum nobis eveniet exercitationem? Expedita magni soluta velit. Rem adipisci distinctio repellendus nesciunt sint nobis illo.</p>
+</body>
+</html>
