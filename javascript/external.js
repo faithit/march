@@ -1,4 +1,4 @@
-document.write("hello from external js file <br>")
+document.write("hello from external js file <br>");
 console.log("hello from console in external js file");
 /*declaring a variable
 //var variablename
