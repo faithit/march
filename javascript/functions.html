@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*creating function
+        function  functionname(){
+            //block of code
+        }*/
+        function  greet(){
+            document.write("hello goodmorning <br>")
+        }
+        //calling a function
+        greet()
+        greet()
+        greet()
+        /*function with parameters
+        function functionname(parameters){
+            //body of function
+        }*/
+        function hello(name,lastname){
+            document.write("hello goodmorning " +name + " " +lastname+"<br>")
+        }
+        //calling the function
+        hello("mary", "jane");
+        hello("luke","otieno")
+        //function that adds two numbers
+        function addNumbers(a ,b) {
+            var sum=a+b
+            console.log("the sum is"+sum)
+        }
+        //calling the function
+        addNumbers(100,300);
+        addNumbers(50,20)
+        //function that calculates areaof rectangle
+        function areaofRectangle(l,w){
+            var area=l*w
+            console.log("the area of rectanle with length",l,"and width ",w,"is "+area)
+        }
+        //caling the function
+        areaofRectangle(10,7)
+        areaofRectangle(30,50)
+    </script>
+</body>
+</html>
