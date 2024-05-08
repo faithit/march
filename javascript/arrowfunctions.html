@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // creating a function
+        function myFunction() {
+            console.log("hello from a function")
+        }
+        //calling the function
+        myFunction();
+        //arrow function
+        const myfunction2=()=>console.log("hello from arrow function")
+        
+        //calling the arrow function
+        myfunction2()
+        //function with parameters
+        function greeting(name){
+            console.log("hello " +name)
+        }
+        //calling the function
+        greeting("abdi")
+        
+        //arrow function with one parameter
+        let greetings=(name)=>console.log('hello '+name)
+        //calling the arrow function
+        greetings("naomi")
+        //function that adds two numbers
+        function addNumbers(a ,b){
+            return a+b
+        }
+        //calling the function
+        console.log(addNumbers(5,6))
+
+        //arrow function  that adds two numbers
+        let addtwonumbers=(a,b)=> a+b;
+        //calling the arrow function
+        console.log(addtwonumbers(3,4));
+        //
+        function example(){
+            alert("this is an alert")
+        }
+        //arrow function that displays an alert box
+        let example2=()=>alert("This is another alert");
+        //calling the arrow function
+        example2();
+    </script>
+</body>
+</html>

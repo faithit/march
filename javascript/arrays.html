@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //an array a type of variable that holds  multiple values of the same data type
+ let  students=["jane","mary","john","nancy"]
+ console.log(students)
+ //accessing elements
+ console.log(students[0])//index starts from zero
+ console.log(students[1])
+ //modifying elements
+ students[1]="abdi"
+ console.log(students)
+ //add an  element to the end of the array
+ students.push("moha")
+ console.log(students)
+ //remove the last element in an  array using pop() method
+ students.pop();
+ console.log(students);
+ //unshift adds an element to  the beginning of the array and shift removes it
+ students.unshift("jessica")
+ console.log(students)
+ //shift removes element from the begining
+ students.shift()
+ console.log(students)
+ //array lenth
+ console.log(students.length)
+ //looping through an array
+ for(let x=0;x<students.length;x++){
+    console.log(students[x])
+ }
+ //another array
+ let fruits=["oranges","apples","bananas","mangoes"]
+console.log(fruits)
+console.log(fruits[0])
+//modifying elements
+fruits[1]="pineaples"
+console.log(fruits)
+
+
+
+    </script>
+    
+</body>
+</html>
